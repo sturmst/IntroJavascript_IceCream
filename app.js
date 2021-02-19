@@ -156,12 +156,20 @@ function getSelectedFalvours () {
     textSelectedFlavour2 = document.getElementById("flav2");
     textSelectedFlavour3 = document.getElementById("flav3");
 
+    var sFlavImg1, sFlavImg2, sFlavImg3;
+    sFlavImg1 = document.getElementById("selectedFlavourImage1");
+    sFlavImg2 = document.getElementById("selectedFlavourImage2");
+    sFlavImg3 = document.getElementById("selectedFlavourImage3");
+
     if (globalScoopAmount === 1) {
         document.getElementById("flav1").innerHTML = "Smaak voor bol 1: " + flavourTextScoop1;
 
         textSelectedFlavour1.style.display = "block";
         textSelectedFlavour2.style.display = "none";
         textSelectedFlavour3.style.display = "none"; 
+
+        sFlavImg1.style.display = "block";
+        sFlavImg1.src = "images/" + flavourTextScoop1 + ".svg";
     }
     if (globalScoopAmount === 2) {
         document.getElementById("flav1").innerHTML = "Smaak voor bol 1: " + flavourTextScoop1;
@@ -171,6 +179,11 @@ function getSelectedFalvours () {
         textSelectedFlavour1.style.display = "block";
         textSelectedFlavour2.style.display = "block";
         textSelectedFlavour3.style.display = "none";
+
+        sFlavImg1.style.display = "block";
+        sFlavImg2.style.display = "block";
+        sFlavImg1.src = "images/" + flavourTextScoop1 + ".svg";
+        sFlavImg2.src = "images/" + flavourTextScoop2 + ".svg";
     }
     
     if (globalScoopAmount === 3) {
@@ -182,6 +195,13 @@ function getSelectedFalvours () {
         textSelectedFlavour1.style.display = "block";
         textSelectedFlavour2.style.display = "block";
         textSelectedFlavour3.style.display = "block";
+
+        sFlavImg1.style.display = "block";
+        sFlavImg2.style.display = "block";
+        sFlavImg3.style.display = "block";
+        sFlavImg1.src = "images/" + flavourTextScoop1 + ".svg";
+        sFlavImg2.src = "images/" + flavourTextScoop2 + ".svg";
+        sFlavImg3.src = "images/" + flavourTextScoop3 + ".svg";
     }
     hideStep1And2();
 }
