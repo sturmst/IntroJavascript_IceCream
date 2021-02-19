@@ -16,13 +16,14 @@
         <div class="container">
             <div class="d-flex flex-column ">
                 <!-- STEP 1 ------------------------------------------- -->
-                <div class="p-5" id="step1">
+                <div class="p-2 flex-fill" id="step1">
                     <h2>1. Kies je aantal bollen</h2>
                     <div class="d-flex flex-row p-2">
                         <h3> Ik wil ...</h3>
+                        <!-- todo: Manier vinden om selectie in dropdown actief te houden en zo te weergeven -->
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Maak je keuze
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton defaultDDValue" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            kies je aantal bollen
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <button class="dropdown-item" type="button" onclick="selectAmountOfScoops(1)" id="btn1Scoop">1 bol ijs. - 2EUR</b>
@@ -33,7 +34,7 @@
                     </div>
                 </div>
                 <!-- STEP 2 ------------------------------------------- -->
-                <div class="p-5" id="step2" style="display: none;">
+                <div class="p-2 flex-fill" id="step2" style="display: none;">
                     <h2>2. Kies een smaak per bol</h2>
                     <h4 id="scoopAmountText"></h4>
                 <!-- STEP 2 SCOOPS ------------------------------------------- -->
@@ -46,19 +47,23 @@
                             <form name="formFlavourOptions1">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-secondary">
-                                        <!-- <img src="https://placeimg.com/640/480/animals" alt=""/> -->
+                                        <img src="images/Vanille.svg" alt="vanilleIce">
                                         <input type="radio" name="radsFlavOp1" id="flavourVanille" autocomplete="off" value="vanille"> Vanille
                                     </label>
                                     <label class="btn btn-secondary">
+                                        <img src="images/Chocolade.svg" alt="chocoladeIce">
                                         <input type="radio" name="radsFlavOp1" id="flavourChocolade" autocomplete="off" value="chocolade"> Chocolade
                                     </label>
                                     <label class="btn btn-secondary">
+                                        <img src="images/Aardbei.svg" alt="aardbeiIce">
                                         <input type="radio" name="radsFlavOp1" id="flavourAarbei" autocomplete="off" value="aardbei"> Aardbei
                                     </label>
                                     <label class="btn btn-secondary">
-                                        <input type="radio" name="radsFlavOp1" id="flavourCitroen" autocomplete="off" value="citroen"> Citroen
+                                        <img src="images/Mango.svg" alt="mangoIce">
+                                        <input type="radio" name="radsFlavOp1" id="flavourMango" autocomplete="off" value="mango"> Mango
                                     </label>
                                     <label class="btn btn-secondary">
+                                        <img src="images/Pistache.svg" alt="pistacheIce">
                                         <input type="radio" name="radsFlavOp1" id="flavourPistache" autocomplete="off" value="pistache"> Pistache
                                     </label>
                                 </div>
@@ -69,19 +74,23 @@
                             <form name="formFlavourOptions2">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-secondary">
-                                        <!-- <img src="https://placeimg.com/640/480/animals" alt=""/> -->
+                                        <img src="images/Vanille.svg" alt="vanilleIce">
                                         <input type="radio" name="radsFlavOp2" id="flavourVanille" autocomplete="off" value="vanille"> Vanille
                                     </label>
                                     <label class="btn btn-secondary">
+                                        <img src="images/Chocolade.svg" alt="chocoladeIce">
                                         <input type="radio" name="radsFlavOp2" id="flavourChocolade" autocomplete="off" value="chocolade"> Chocolade
                                     </label>
                                     <label class="btn btn-secondary">
+                                        <img src="images/Aardbei.svg" alt="aardbeiIce">
                                         <input type="radio" name="radsFlavOp2" id="flavourAarbei" autocomplete="off" value="aardbei"> Aardbei
                                     </label>
                                     <label class="btn btn-secondary">
-                                        <input type="radio" name="radsFlavOp2" id="flavourCitroen" autocomplete="off" value="citroen"> Citroen
+                                        <img src="images/Mango.svg" alt="mangoIce">
+                                        <input type="radio" name="radsFlavOp2" id="flavourMango" autocomplete="off" value="mango"> Mango
                                     </label>
                                     <label class="btn btn-secondary">
+                                        <img src="images/Pistache.svg" alt="pistacheIce">
                                         <input type="radio" name="radsFlavOp2" id="flavourPistache" autocomplete="off" value="pistache"> Pistache
                                     </label>
                                 </div>
@@ -92,19 +101,23 @@
                         <form name="formFlavourOptions3">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-secondary">
-                                    <!-- <img src="https://placeimg.com/640/480/animals" alt=""/> -->
+                                    <img src="images/Vanille.svg" alt="vanilleIce">
                                     <input type="radio" name="radsFlavOp3" id="flavourVanille" autocomplete="off" value="vanille"> Vanille
                                 </label>
                                 <label class="btn btn-secondary">
+                                    <img src="images/Chocolade.svg" alt="chocoladeIce">
                                     <input type="radio" name="radsFlavOp3" id="flavourChocolade" autocomplete="off" value="chocolade"> Chocolade
                                 </label>
                                 <label class="btn btn-secondary">
+                                    <img src="images/Aardbei.svg" alt="aardbeiIce">
                                     <input type="radio" name="radsFlavOp3" id="flavourAarbei" autocomplete="off" value="aardbei"> Aardbei
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="radsFlavOp3" id="flavourCitroen" autocomplete="off" value="citroen"> Citroen
+                                    <img src="images/Mango.svg" alt="mangoIce">
+                                    <input type="radio" name="radsFlavOp3" id="flavourMango" autocomplete="off" value="mango"> Mango
                                 </label>
                                 <label class="btn btn-secondary">
+                                    <img src="images/Pistache.svg" alt="pistacheIce">
                                     <input type="radio" name="radsFlavOp3" id="flavourPistache" autocomplete="off" value="pistache"> Pistache
                                 </label>
                             </div>
