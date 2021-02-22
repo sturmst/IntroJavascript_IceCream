@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="100px" height="159px" viewBox="0 0 100 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-    <title>Cone</title>
+    <title>cone</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="42.6996311%" y1="-2.02801394%" x2="100%" y2="-2.02801394%" id="linearGradient-1">
@@ -15,7 +15,7 @@
     </defs>
     <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-556.000000, -210.000000)">
-            <g id="Cone" transform="translate(556.000000, 210.000000)">
+            <g id="cone" transform="translate(556.000000, 210.000000)">
                 <rect id="Rectangle" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="100" height="159"></rect>
                 <path d="M48.998643,29.7437949 L17,26 C17,26 20.7630296,47.0494057 22.6465799,51.7251034 L41.9421144,152.745528 C41.9421144,152.745528 44.2938383,160.226374 48.998643,158.825148 C53.7048047,160.226374 56.0578856,152.745528 56.0578856,152.745528 L75.3534201,51.7251034 C77.2356134,47.0494057 81,26 81,26 L48.998643,29.7437949 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
                 <polyline id="Path" fill="#EFA57E" fill-rule="nonzero" points="70.6641003 32.5774694 61 85 69.0915718 83.4389038 81 27 70.6641003 32.5774694"></polyline>
