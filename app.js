@@ -199,9 +199,9 @@ function getSelectedFalvours () {
         sFlavImg1.style.display = "block";
         sFlavImg2.style.display = "block";
         sFlavImg3.style.display = "block";
-        sFlavImg1.src = "images/" + flavourTextScoop1 + ".svg";
-        sFlavImg2.src = "images/" + flavourTextScoop2 + ".svg";
-        sFlavImg3.src = "images/" + flavourTextScoop3 + ".svg";
+        sFlavImg1.src = "/images/" + flavourTextScoop1 + ".svg";
+        sFlavImg2.src = "/images/" + flavourTextScoop2 + ".svg";
+        sFlavImg3.src = "/images/" + flavourTextScoop3 + ".svg";
     }
     hideStep1And2();
 }
