@@ -191,6 +191,8 @@ function getSelectedFalvours () {
         document.getElementById("flav2").innerHTML = "Smaak voor bol 2: " + flavourTextScoop2;
         document.getElementById("flav3").innerHTML = "Smaak voor bol 3: " + flavourTextScoop3;
 
+        let fileExtension = ".png";
+
 
         textSelectedFlavour1.style.display = "block";
         textSelectedFlavour2.style.display = "block";
@@ -199,9 +201,9 @@ function getSelectedFalvours () {
         sFlavImg1.style.display = "block";
         sFlavImg2.style.display = "block";
         sFlavImg3.style.display = "block";
-        sFlavImg1.src = "/images/" + flavourTextScoop1 + ".svg";
-        sFlavImg2.src = "/images/" + flavourTextScoop2 + ".svg";
-        sFlavImg3.src = "/images/" + flavourTextScoop3 + ".svg";
+        sFlavImg1.src = "/images/" + flavourTextScoop1 + fileExtension;
+        sFlavImg2.src = "/images/" + flavourTextScoop2 + fileExtension;
+        sFlavImg3.src = "/images/" + flavourTextScoop3 + fileExtension;
     }
     hideStep1And2();
 }
