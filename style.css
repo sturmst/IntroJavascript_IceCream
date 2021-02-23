@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 h1{
     text-align: center;
     margin-top: 10vh;
     font-size: 5em;
+}
+
+.cream{
+    /* https://www.pantone.com/color-finder/12-1009-TPG */
+    background: #F9DDCA !important;
 }
