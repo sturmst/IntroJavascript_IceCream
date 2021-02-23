@@ -5,6 +5,9 @@ globalStep1 = document.getElementById("step1");
 globalStep2 = document.getElementById("step2");
 globalStep3 = document.getElementById("step3");
 
+let startPath = "images/";
+let fileExtension = ".svg";
+
 //* OK, kan nog verbeterd worden
 function selectAmountOfScoops (scAmount) {
     if (scAmount === 1){
@@ -169,7 +172,8 @@ function getSelectedFalvours () {
         textSelectedFlavour3.style.display = "none"; 
 
         sFlavImg1.style.display = "block";
-        sFlavImg1.src = "images/" + flavourTextScoop1 + ".svg";
+        sFlavImg1.src = startPath + flavourTextScoop1 + fileExtension;
+ 
     }
     if (globalScoopAmount === 2) {
         document.getElementById("flav1").innerHTML = "Smaak voor bol 1: " + flavourTextScoop1;
@@ -182,16 +186,15 @@ function getSelectedFalvours () {
 
         sFlavImg1.style.display = "block";
         sFlavImg2.style.display = "block";
-        sFlavImg1.src = "images/" + flavourTextScoop1 + ".svg";
-        sFlavImg2.src = "images/" + flavourTextScoop2 + ".svg";
+        sFlavImg1.src = startPath + flavourTextScoop1 + fileExtension;
+        sFlavImg2.src = startPath + flavourTextScoop2 + fileExtension;
+ 
     }
     
     if (globalScoopAmount === 3) {
         document.getElementById("flav1").innerHTML = "Smaak voor bol 1: " + flavourTextScoop1;
         document.getElementById("flav2").innerHTML = "Smaak voor bol 2: " + flavourTextScoop2;
         document.getElementById("flav3").innerHTML = "Smaak voor bol 3: " + flavourTextScoop3;
-
-        let fileExtension = ".png";
 
 
         textSelectedFlavour1.style.display = "block";
@@ -201,9 +204,9 @@ function getSelectedFalvours () {
         sFlavImg1.style.display = "block";
         sFlavImg2.style.display = "block";
         sFlavImg3.style.display = "block";
-        sFlavImg1.src = "/images/" + flavourTextScoop1 + fileExtension;
-        sFlavImg2.src = "/images/" + flavourTextScoop2 + fileExtension;
-        sFlavImg3.src = "/images/" + flavourTextScoop3 + fileExtension;
+        sFlavImg1.src = startPath + flavourTextScoop1 + fileExtension;
+        sFlavImg2.src = startPath + flavourTextScoop2 + fileExtension;
+        sFlavImg3.src = startPath + flavourTextScoop3 + fileExtension;
     }
     hideStep1And2();
 }
